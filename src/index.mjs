@@ -9,6 +9,7 @@ import "./strategies/local-strategy.mjs";
 // import "./strategies/discord-strategy.mjs";
 import MongoStore from "connect-mongo";
 import connectDb  from "./config/dbConnection.mjs";
+import cors from 'cors';
 
 const app = express();
 dotenv.config();
