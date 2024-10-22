@@ -44,6 +44,7 @@ app.post("/api/auth", passport.authenticate("local"), (req, res)=>{
     res.sendStatus(200);
 });
 
+//Testing again
 app.get("/api/auth/status", (req, res)=>{
     console.log("Inside status");
     console.log(req.sessionID);
