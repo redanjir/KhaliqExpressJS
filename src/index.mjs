@@ -40,6 +40,7 @@ app.get("/api/auth/discord/redirect", passport.authenticate("discord"), (req,res
     res.sendStatus(200);
 });
 
+//Testing comment
 app.post("/api/auth", passport.authenticate("local"), (req, res)=>{
     res.sendStatus(200);
 });
