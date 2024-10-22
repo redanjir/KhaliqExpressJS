@@ -14,7 +14,9 @@ const app = express();
 dotenv.config();
 connectDb();
 
-
+app.use(cors({
+    origin: 'https://redanjir.github.io', // Specify your frontend URL
+}));
 app.use(express.json());
 app.use(cookieParser("helloworld"));
 app.use(session({
